@@ -4951,7 +4951,7 @@ return false
 end
 if text == ("الثانويين") and SudoBot(msg) then
 local list = database:smembers(bot_id.."DEV:Sudo:T")
-t = "\n⌁︙ قائمة مطورين الثانويين للبوت \n ⍆══•═══𝘽𝙏══•═══⍅ \n"
+t = "\n⌁︙قائمة مطورين الثانويين للبوت \n ٴ『─────·𖤐·─────』ٴ \n"
 for k,v in pairs(list) do
 local username = database:get(bot_id.."user:Name" .. v)
 if username then
@@ -4961,7 +4961,7 @@ t = t..""..k.."- (`"..v.."`)\n"
 end
 end
 if #list == 0 then
-t = "⌁︙ لا يوجد مطورين ثانويين"
+t = "⌁︙لا يوجد مطورين ثانويين"
 end
 send(msg.chat_id_, msg.id_, t)
 end
@@ -8035,7 +8035,7 @@ local linkgpp = json:decode(https.request('https://api.telegram.org/bot'..token.
 if linkgpp.ok == true then 
 linkgp = '𝒍𝒊𝒏𝒌 𝒈𝒓𝒐𝒖𝒑  \n『─────·𖤐·─────』\n ['..ta.title_..']('..linkgpp.result..')'
 else
-linkgp = '⌁︙ لا يوجد رابط ارسل ضع رابط'
+linkgp = '✟ لا يوجد رابط ارسل ضع رابط'
 end  
 send(msg.chat_id_, msg.id_,linkgp)              
 end      
